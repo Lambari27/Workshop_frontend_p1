@@ -129,6 +129,132 @@ function App() {
           </div>
         </section>
 
+        {/* Schedule / Programação */}
+        <section id="schedule" className="py-24 bg-slate-950 relative">
+          <div className="container mx-auto px-4">
+            <div className="mb-16 text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Programação <span className="text-cyan-400">Oficial</span></h2>
+              <p className="text-slate-400">Confira algumas das atrações confirmadas para os palcos principais. A programação completa estará disponível no app do evento.</p>
+            </div>
+
+            <div className="flex flex-col gap-6 max-w-4xl mx-auto">
+              {/* Day 1 */}
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 text-center min-w-[120px]">
+                  <span className="block text-cyan-400 font-black text-2xl">15 NOV</span>
+                  <span className="block text-slate-400 text-sm font-semibold uppercase tracking-wider">Sexta</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-white mb-2">Cerimônia de Abertura & Keynote Xbox</h3>
+                  <p className="text-slate-400 mb-4">O evento começa oficialmente com Phil Spencer apresentando as novidades do ecossistema e estreias mundiais.</p>
+                  <div className="flex items-center gap-4 text-sm text-slate-500 font-mono">
+                    <span className="flex items-center gap-1"><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 10:00 - 12:00</span>
+                    <span className="flex items-center gap-1"><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg> Palco Principal</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Day 2 */}
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-4 text-center min-w-[120px]">
+                  <span className="block text-purple-400 font-black text-2xl">16 NOV</span>
+                  <span className="block text-slate-400 text-sm font-semibold uppercase tracking-wider">Sábado</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-white mb-2">Finais do Campeonato de Valorant</h3>
+                  <p className="text-slate-400 mb-4">Acompanhe as finais presenciais da liga sul-americana em uma arena dedicada, com narração ao vivo e prêmios.</p>
+                  <div className="flex items-center gap-4 text-sm text-slate-500 font-mono">
+                    <span className="flex items-center gap-1"><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 14:00 - 19:00</span>
+                    <span className="flex items-center gap-1"><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg> Arena Esports</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Day 3 */}
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <div className="bg-pink-500/10 border border-pink-500/30 rounded-xl p-4 text-center min-w-[120px]">
+                  <span className="block text-pink-400 font-black text-2xl">17 NOV</span>
+                  <span className="block text-slate-400 text-sm font-semibold uppercase tracking-wider">Domingo</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-white mb-2">Indie Games Showcase & Encerramento</h3>
+                  <p className="text-slate-400 mb-4">Painel dedicado aos jogos independentes mais promissores do ano, seguido pelo show musical de encerramento.</p>
+                  <div className="flex items-center gap-4 text-sm text-slate-500 font-mono">
+                    <span className="flex items-center gap-1"><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 16:30 - 20:00</span>
+                    <span className="flex items-center gap-1"><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg> Palco Principal</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Tickets / Ingressos */}
+        <section id="tickets" className="py-24 bg-gradient-to-b from-slate-900 to-slate-950 relative">
+          <div className="container mx-auto px-4">
+            <div className="mb-16 text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Garanta seu <span className="text-purple-400">Ingresso</span></h2>
+              <p className="text-slate-400">Escolha o plano que melhor se adapta a sua jornada. Lotes sujeitos a alteração sem aviso prévio.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
+              
+              {/* Ticket 1 */}
+              <div className="bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col">
+                <h3 className="text-2xl font-bold text-white mb-2">Passe Diário</h3>
+                <p className="text-slate-400 mb-6 flex-1">Acesso a um dia específico do evento, ideal para quem quer focar na sua atração favorita.</p>
+                <div className="mb-8">
+                  <span className="text-4xl font-black text-white">R$ 150</span>
+                  <span className="text-slate-500">/dia</span>
+                </div>
+                <ul className="flex flex-col gap-3 mb-8 text-slate-300">
+                  <li className="flex items-center gap-3"><svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Acesso aos estandes</li>
+                  <li className="flex items-center gap-3"><svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Palestras no Palco Principal</li>
+                  <li className="flex items-center gap-3 opacity-50"><svg className="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg> Entrada antecipada (Fast Pass)</li>
+                  <li className="flex items-center gap-3 opacity-50"><svg className="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg> Acesso à Área VIP</li>
+                </ul>
+                <a 
+                  href="https://wa.me/5511999999999?text=Olá,%20tenho%20interesse%20no%20Passe%20Diário%20da%20Nexus%20Con!" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full text-center bg-slate-700 hover:bg-slate-600 text-white py-4 rounded-xl font-bold transition-colors"
+                >
+                  Comprar pelo WhatsApp
+                </a>
+              </div>
+
+              {/* Ticket 2 */}
+              <div className="bg-gradient-to-b from-purple-900/50 to-slate-900 border-2 border-purple-500 relative rounded-3xl p-8 flex flex-col shadow-[0_0_30px_rgba(168,85,247,0.15)] transform md:-translate-y-4">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-bold tracking-wide uppercase">
+                  Mais Popular
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">Nexus Pass (3 Dias)</h3>
+                <p className="text-purple-200 mb-6 flex-1">A experiência definitiva. Viva intensamente todos os dias do maior evento de games.</p>
+                <div className="mb-8">
+                  <span className="text-4xl font-black text-white">R$ 380</span>
+                  <span className="text-purple-300">/lote atual</span>
+                </div>
+                <ul className="flex flex-col gap-3 mb-8 text-slate-200">
+                  <li className="flex items-center gap-3"><svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Acesso aos 3 dias de evento</li>
+                  <li className="flex items-center gap-3"><svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Prioridade no Meet & Greet</li>
+                  <li className="flex items-center gap-3"><svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Entrada antecipada (1h antes)</li>
+                  <li className="flex items-center gap-3"><svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Kit Nexus (Camiseta + Credencial)</li>
+                </ul>
+                <a 
+                  href="https://wa.me/5511999999999?text=Olá,%20tenho%20interesse%20no%20Nexus%20Pass%20(3%20Dias)%20da%20Nexus%20Con!" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full text-center bg-purple-500 hover:bg-purple-600 text-white py-4 rounded-xl font-bold transition-all shadow-lg shadow-purple-500/25"
+                >
+                  Comprar pelo WhatsApp
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
       </main>
 
       {/* Footer */}
